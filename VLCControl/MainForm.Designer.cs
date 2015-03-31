@@ -37,6 +37,9 @@
             this.btnConnect = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_runVLC = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabCommandLine.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -89,6 +92,7 @@
             this.txbCommand.Name = "txbCommand";
             this.txbCommand.Size = new System.Drawing.Size(444, 22);
             this.txbCommand.TabIndex = 4;
+            this.txbCommand.Text = "help";
             this.txbCommand.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txbCommand_KeyUp);
             // 
             // txbLog
@@ -112,7 +116,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(254, 255);
+            this.button2.Location = new System.Drawing.Point(282, 255);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 39);
             this.button2.TabIndex = 3;
@@ -130,23 +134,54 @@
             this.btn_runVLC.UseVisualStyleBackColor = true;
             this.btn_runVLC.Click += new System.EventHandler(this.btn_runVLC_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 297);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "1. Run VLC";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(134, 297);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "2. Connect to VLC";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(420, 252);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(130, 34);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "3. Send command. \r\nStart with help";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 302);
+            this.ClientSize = new System.Drawing.Size(555, 342);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_runVLC);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.tabCommandLine);
             this.Name = "mainForm";
-            this.Text = "Form1";
+            this.Text = "VLC controller";
             this.tabCommandLine.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -161,6 +196,9 @@
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.TextBox txbCommand;
         private System.Windows.Forms.Button btn_runVLC;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
